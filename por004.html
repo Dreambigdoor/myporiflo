@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | มงคลฤทธิ์ สุภาคาร</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #2e7d32;
+            --light-green: #e8f5e9;
+            --accent-green: #c8e6c9;
+            --white: #ffffff;
+            --text-dark: #2c3e50;
+        }
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #f9fdf9; /* พื้นหลังเขียวอ่อนสว่าง */
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+        }
+
+        /* ส่วนหัว: ชื่อและความชอบ */
+        header {
+            background-color: var(--primary-green);
+            color: var(--white);
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 { margin: 0; font-size: 2.5rem; }
+        .hobby-text { font-weight: 300; margin-top: 10px; opacity: 0.9; }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-green);
+            border-left: 5px solid var(--primary-green);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* ส่วนการศึกษา */
+        .edu-item {
+            padding: 10px 0;
+            border-bottom: 1px dashed var(--accent-green);
+        }
+        .edu-item:last-child { border-bottom: none; }
+        .edu-school { font-weight: 600; color: var(--primary-green); }
+
+        /* รูปภาพผลการเรียน (Placeholder) */
+        .img-box {
+            width: 100%;
+            min-height: 250px;
+            background: var(--light-green);
+            border: 2px dashed var(--primary-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .img-box img { max-width: 100%; height: auto; }
+
+        /* กิจกรรม */
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .act-card {
+            background: #f1f1f1;
+            height: 150px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+        }
+
+        /* ทักษะ */
+        .skill-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-badge {
+            background: var(--light-green);
+            color: var(--primary-green);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid var(--primary-green);
+        }
+
+        footer { text-align: center; padding: 30px; color: #888; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>มงคลฤทธิ์ สุภาคาร</h1>
+        <p class="hobby-text">🎮 Gaming | 🎵 Music | 🍎 Fruit Lover</p>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>ประวัติการศึกษา (Education)</h2>
+            <div class="edu-item">
+                <span class="edu-school">🎓 ระดับมหาวิทยาลัย:</span> มหาวิทยาลัยราชภัฏพระนคร บางเขน
+            </div>
+            <div class="edu-item">
+                <span class="edu-school">🏫 ระดับมัธยมศึกษา:</span> โรงเรียนนวมินทราชูทิศ
+            </div>
+            <div class="edu-item">
+                <span class="edu-school">✏️ ระดับประถมศึกษา:</span> โรงเรียนเบญจมินทร์
+            </div>
+        </section>
+
+        <section>
+            <h2>ผลการเรียน (Transcript)</h2>
+            <div class="img-box">
+                <img src="grade.jpg" alt="[ พื้นที่ใส่รูปภาพผลการเรียน ]">
+            </div>
+        </section>
+
+        <section>
+            <h2>ทักษะต่างๆ (Skills)</h2>
+            <div class="skill-container">
+                <div class="skill-badge">Cloud Computing (Deployment)</div>
+                <div class="skill-badge">HTML5 & CSS3</div>
+                <div class="skill-badge">Computer Hardware Maintenance</div>
+                <div class="skill-badge">Network Basics</div>
+                <div class="skill-badge">Critical Thinking</div>
+                <div class="skill-badge">English for IT</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>กิจกรรม (Activities)</h2>
+            <div class="activity-grid">
+                <div class="act-card">รูปกิจกรรมที่ 1</div>
+                <div class="act-card">รูปกิจกรรมที่ 2</div>
+                <div class="act-card">รูปกิจกรรมที่ 3</div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 มงคลฤทธิ์ สุภาคาร | My Portfolio App
+    </footer>
+
+</body>
+</html>
